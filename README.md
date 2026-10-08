@@ -4,7 +4,7 @@
 
 ## Team
 
-**Team Name:** [Team Name]
+**Team Name:** Vertex Zero
 
 
 | Member | Contribution   |
