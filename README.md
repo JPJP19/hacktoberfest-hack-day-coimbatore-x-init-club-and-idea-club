@@ -19,15 +19,30 @@
 
 ### The Problem
 
-[Describe the problem being addressed, who is affected by it, and the context in which it occurs.]
+Recycling is often fragmented for both consumers and recycling vendors. Individuals who have recyclable materials such as e-waste, copper, aluminium, plastic, paper, or scrap metal often do not know which recycler to contact, what their waste is worth, or whether they are getting a fair offer. They may have to contact multiple local recyclers individually to compare prices.
+At the same time, recycling vendors have difficulty discovering nearby sources of recyclable materials that match the materials they process.
+This creates a disconnected ecosystem where potentially valuable recyclable materials may simply be discarded because finding the right recycler is inconvenient.
 
 ### Why We Chose This Problem
 
-[Explain why the team selected this problem and why solving it is important.]
+Recycling is usually treated as a disposal problem.We want to change that into a value and connectivity problem.
+The idea is to make recycling as convenient as using a modern service marketplace. Instead of searching for recyclers manually, users can list their recyclable materials once and allow suitable recyclers to compete for them.
+This can make recycling more convenient for users while helping recyclers discover a reliable supply of recyclable materials.
 
 ## Solution
 
-[Describe the proposed solution and how it addresses the problem.]
+We propose WasteConnect, a two-sided digital marketplace that connects people who have recyclable materials with recycling vendors.
+Users can upload an image and description of their waste. Gemma analyzes the available information to understand the material and generate a structured waste listing.
+The listing is then made available to eligible recycling vendors in the relevant area. Vendors can submit competing bids/offers based on the material, quantity, location, and their processing capabilities.
+Users can compare the available offers based on:
+- Price
+- Distance
+- Pickup availability
+- Vendor rating
+- Material compatibility
+- Reliability
+Gemma acts as a decision-support layer, helping users understand the trade-offs between different offers and explaining why a particular option may be more suitable.
+The final decision remains with the user.
 
 ### Key Features
 
