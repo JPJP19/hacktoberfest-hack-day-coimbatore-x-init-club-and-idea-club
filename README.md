@@ -1,4 +1,4 @@
-# Vertex Zero
+# WasteConnect 
 
 > AI-powered recycling marketplace that connects waste generators with suitable recyclers through intelligent matching and competitive bidding.
 
