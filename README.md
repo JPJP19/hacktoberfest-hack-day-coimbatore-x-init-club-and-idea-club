@@ -1,6 +1,6 @@
-# [Project Name]
+# Vertex Zero
 
-> [One-line description of the project and what it does.]
+> AI-powered recycling marketplace that connects waste generators with suitable recyclers through intelligent matching and competitive bidding.
 
 ## Team
 
@@ -9,10 +9,10 @@
 
 | Member | Contribution   |
 | ------ | -------------- |
-| [Name] | [Contribution] |
-| [Name] | [Contribution] |
-| [Name] | [Contribution] |
-| [Name] | [Contribution] |
+| A S Jeevanpranav | Backend development, database design, API integration, and transaction workflow |
+| Dakshenya KS | Frontend development, UI/UX, marketplace and dashboard implementation |
+| Mahizha S | AI/ML architecture, Gemma integration, semantic matching, and decision intelligence |
+| Prajiin K | Recycler marketplace, bidding system, testing, integration, and deployment |
 
 
 ## Problem Statement
