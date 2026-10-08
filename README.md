@@ -73,7 +73,7 @@ Gemma is not used simply as a chatbot. It acts as an intelligence layer that und
 | Frontend        | React, Vite, HTML, CSS, JavaScript     |
 | Backend         | Python, FastAPI       |
 | Database        |PostgreSQL    |
-| AI / ML         | Gemma] |
+| AI / ML         | Gemma |
 | Infrastructure  | Render      |
 | APIs / Services | [Services / N/A]            |
 
