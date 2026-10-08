@@ -63,7 +63,36 @@ Gemma is not used simply as a chatbot. It acts as an intelligence layer that und
 
 ### Architecture
 
-[Add the system architecture or workflow Mermaid diagram here.]
+flowchart TD
+    A[User] --> B[React Frontend]
+    C[Recycler] --> B
+
+    B --> D[FastAPI Backend]
+
+    D --> E[Supabase / PostgreSQL]
+    D --> F[Gemma AI Layer]
+    D --> G[Bidding Engine]
+
+    F --> F1[Waste Understanding]
+    F --> F2[Waste Categorization]
+    F --> F3[Recycler Matching]
+    F --> F4[Bid Analysis]
+    F --> F5[Explainable Recommendation]
+
+    G --> H[Recycler Bids]
+
+    H --> F4
+    F4 --> I[Gemma Recommendation]
+
+    I --> B
+
+    B --> J[User Selects Recycler]
+    J --> D
+
+    D --> K[Pickup Scheduling]
+    K --> L[Transaction Completion]
+
+    E --> D
 
 ### Technology Stack
 
