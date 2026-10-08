@@ -41,6 +41,7 @@ Users can compare the available offers based on:
 - Vendor rating
 - Material compatibility
 - Reliability
+
 Gemma acts as a decision-support layer, helping users understand the trade-offs between different offers and explaining why a particular option may be more suitable.
 The final decision remains with the user.
 
