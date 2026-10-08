@@ -165,7 +165,7 @@ The submitted application should be functional and accessible through the provid
 
 ## Demo Video
 
-**Demo Video:** [https://youtu.be/b9lz5O_S](https://youtu.be/b9Iz5O_SjzY)
+**Demo Video:** [[https://youtu.be/b9lz5O_S](https://youtu.be/b9Iz5O_SjzY)](https://youtu.be/b9Iz5O_SjzY)
 
 [Provide a short demonstration of the working project, covering the main user flow and important functionality.]
 
