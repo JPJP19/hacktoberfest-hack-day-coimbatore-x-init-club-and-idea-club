@@ -141,10 +141,10 @@ The implemented prototype includes:
 
 ### Team Contributions
 
-- **[AS Jeevanpranav]:** [Backend development, database design, API integration, and transaction workflow]
-- **[Dakshenya KS]:** [Frontend development, UI/UX, marketplace and dashboard implementation]
-- **[Mahizha S]:** [AI/ML architecture, Gemma integration, semantic matching, and decision intelligence ]
-- **[Prajiin K]:** [Recycler marketplace, bidding system, testing, integration, and deployment]
+- **AS Jeevanpranav:** Backend development, database design, API integration, and transaction workflow
+- **Dakshenya KS:** Frontend development, UI/UX, marketplace and dashboard implementation
+- **Mahizha S:** AI/ML architecture, Gemma integration, semantic matching, and decision intelligence 
+- **Prajiin K:** Recycler marketplace, bidding system, testing, integration, and deployment
 
 ## Working Application
 
