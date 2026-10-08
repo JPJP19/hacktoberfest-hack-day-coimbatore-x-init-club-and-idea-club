@@ -150,7 +150,16 @@ The implemented prototype includes:
 
 **Live Application:** [Live URL]
 
-[Briefly explain how the deployed application can be accessed and what functionality can be tested.]
+WasteConnect is deployed as a web-based recycling marketplace accessible through a standard web browser.
+Users can:
+1. Create a recyclable-waste listing by uploading an image and entering basic information.
+2. Use Gemma to analyze and understand the submitted waste.
+3. View suitable recycling vendors.
+4. Receive and compare competing recycler bids.
+5. Ask Gemma to analyze the available offers.
+6. View an explainable recommendation based on price, distance, pickup availability, and vendor rating.
+7. Select a recycler and initiate the pickup/transaction workflow.
+Recycler users can create profiles, specify the materials they accept, view relevant waste listings, and submit competitive offers.
 
 The submitted application should be functional and accessible through the provided link where applicable.
 
@@ -164,13 +173,15 @@ The submitted application should be functional and accessible through the provid
 
 ### AI / Models
 
-- **[Model]:** [How it is used]
+- **Gemma:** Used as the primary AI intelligence layer for understanding user-submitted waste information, extracting structured information from descriptions/images, assisting with recycler matching, comparing competing offers, and generating explainable recommendations
 
 ### Open Source Components
 
-- **[Library / Framework]:** [Purpose]
-- **[Dataset]:** [Purpose]
-- **[API / Service]:** [Purpose]
+- **React:** Frontend user interface and application components.
+- **Vite:** Frontend development and build tooling.
+- **Python:** Backend application development.
+- **FastAPI:** REST API and backend services.
+- **Gemma:** Open model used for waste understanding and intelligent offer analysis.
 
 [Include relevant licenses, attribution, and acknowledgements for external components.]
 
@@ -178,16 +189,23 @@ The submitted application should be functional and accessible through the provid
 
 ### Prerequisites
 
-- [Requirement]
-- [Requirement]
+- Python 3.10+
+- Node.js 18+
+- Gemma
+    
 
 ### Installation
 
-```bash
 git clone [repository-url]
 cd [project-directory]
-[installation-command]
-```
+
+Install backend dependencies
+cd backend
+pip install -r requirements.txt
+
+Install frontend dependencies
+cd ../frontend
+npm install
 
 ### Environment Variables
 
@@ -199,13 +217,49 @@ cd [project-directory]
 
 ### Running the Project
 
-```bash
-[run-command]
-```
+Start Backend
+cd backend
+uvicorn main:app --reload
+
+The FastAPI backend will normally be available at:
+http://localhost:8000
+
+Start Frontend
+Open another terminal:
+cd frontend
+npm run dev
+
+The frontend will normally be available at:
+http://localhost:3000
 
 ### Usage
-
-[Explain the basic steps required to use the project.]
+1. Create a user account
+Register/login as a user who wants to recycle material.
+2. Upload waste
+Upload a photograph and provide basic information such as:
+- Waste description
+- Approximate quantity
+- Location
+- Pickup requirement
+3. Gemma analyzes the waste
+Gemma processes the available information and generates a structured understanding of the material.
+4. Create the listing
+The waste is published as a marketplace listing.
+5. Recycler bidding
+Eligible recycling vendors can view the listing and submit offers.
+6. Compare offers
+The user can compare:
+- Bid amount
+- Distance
+- Pickup availability
+- Vendor rating
+- Material compatibility
+7. Ask Gemma
+The user can request queries
+8. Select recycler
+The user makes the final decision and accepts the selected offer.
+9. Pickup and transaction
+The recycler receives the request and the transaction moves
 
 ## Devpost Submission
 
@@ -217,11 +271,23 @@ cd [project-directory]
 
 ### Credits
 
-[Credit libraries, frameworks, datasets, models, APIs, contributors, and other external resources used.]
+WasteConnect uses the following open-source technologies and services:
+- Gemma — AI reasoning and waste/offer analysis
+- React — Frontend development
+- Vite — Frontend build tooling
+- FastAPI — Backend API development
 
 ### License
 
-[License name and/or link.]
+MIT License
+
+Copyright (c) 2026 WasteConnect Team
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files, to deal in the Software
+without restriction, including without limitation the rights to use, copy,
+modify, merge, publish, distribute, sublicense, and/or sell copies of the Software,
+subject to the conditions of the MIT License.
 
 ## Submission Checklist
 
