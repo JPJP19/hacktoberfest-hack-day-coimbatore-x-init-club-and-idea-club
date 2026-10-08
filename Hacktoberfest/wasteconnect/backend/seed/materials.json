@@ -1,0 +1,63 @@
+{
+  "categories": [
+    {
+      "name": "Metals",
+      "materials": [
+        {"name": "copper", "restricted": false, "unit": "kg"},
+        {"name": "aluminum", "restricted": false, "unit": "kg"},
+        {"name": "steel", "restricted": false, "unit": "kg"},
+        {"name": "brass", "restricted": false, "unit": "kg"},
+        {"name": "lead", "restricted": true, "unit": "kg"}
+      ]
+    },
+    {
+      "name": "Electronics",
+      "materials": [
+        {"name": "circuit_boards", "restricted": true, "unit": "kg"},
+        {"name": "batteries", "restricted": true, "unit": "kg"},
+        {"name": "monitors", "restricted": true, "unit": "units"},
+        {"name": "cables", "restricted": false, "unit": "kg"}
+      ]
+    },
+    {
+      "name": "Plastics",
+      "materials": [
+        {"name": "plastic", "restricted": false, "unit": "kg"},
+        {"name": "hdpe", "restricted": false, "unit": "kg"},
+        {"name": "pvc", "restricted": true, "unit": "kg"},
+        {"name": "pet", "restricted": false, "unit": "kg"}
+      ]
+    },
+    {
+      "name": "Paper",
+      "materials": [
+        {"name": "paper", "restricted": false, "unit": "kg"},
+        {"name": "cardboard", "restricted": false, "unit": "kg"},
+        {"name": "newspaper", "restricted": false, "unit": "kg"}
+      ]
+    },
+    {
+      "name": "Hazardous",
+      "materials": [
+        {"name": "paint", "restricted": true, "unit": "liters"},
+        {"name": "oil", "restricted": true, "unit": "liters"},
+        {"name": "chemicals", "restricted": true, "unit": "kg"},
+        {"name": "solvents", "restricted": true, "unit": "liters"}
+      ]
+    },
+    {
+      "name": "Glass",
+      "materials": [
+        {"name": "glass", "restricted": false, "unit": "kg"},
+        {"name": "bottles", "restricted": false, "unit": "units"}
+      ]
+    },
+    {
+      "name": "Textile",
+      "materials": [
+        {"name": "clothes", "restricted": false, "unit": "kg"},
+        {"name": "textile", "restricted": false, "unit": "kg"}
+      ]
+    }
+  ]
+}

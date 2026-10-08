@@ -1,0 +1,3 @@
+@echo off
+echo Opening WasteConnect Frontend...
+start http://localhost:3000

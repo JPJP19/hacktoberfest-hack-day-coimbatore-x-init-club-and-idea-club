@@ -1,0 +1,22 @@
+# Node
+node_modules/
+.next/
+out/
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.env
+
+# Environment
+.env
+.env.local
+
+# Build
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
