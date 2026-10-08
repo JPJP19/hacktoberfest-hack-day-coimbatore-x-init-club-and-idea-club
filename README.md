@@ -47,15 +47,18 @@ The final decision remains with the user.
 
 ### Key Features
 
-- [Feature 1]
-- [Feature 2]
-- [Feature 3]
-- [Feature 4]
+- AI-Powered Waste Understanding
+- Competitive Bidding Marketplace
+- Explainable Best-Offer Recommendations
+- Safety, Trust and Transparent Transactions
 
 ## Innovation and Differentiation
 
-[Explain what is innovative about the approach and how it differs from existing or conventional solutions.]
-
+Existing recycling systems often focus on collection or disposal, while WasteConnect focuses on creating a marketplace between waste generators and recyclers.
+The key difference is the combination of:
+AI-powered waste understanding + competitive recycler marketplace + intelligent offer comparison.
+Instead of users searching for individual recycling vendors, the platform allows suitable vendors to come to the user through a competitive offer system.
+Gemma is not used simply as a chatbot. It acts as an intelligence layer that understands unstructured waste information and helps users make informed decisions when comparing recycler offers.
 ## Technical Implementation
 
 ### Architecture
@@ -79,22 +82,69 @@ If a category or technology is not implemented in the project, specify `N/A` ins
 
 ### How It Works
 
-[Explain the major components of the system and how they interact.]
+WasteConnect operates as a two-sided marketplace connecting users with recyclable materials to recycling vendors.
+1. Waste Listing: The user uploads an image and description of the recyclable material along with quantity and location.
+2. AI Understanding: Gemma analyzes the submitted information to identify the likely waste category, material characteristics, and appropriate recycler category.
+3. Recycler Matching: The backend filters recycling vendors based on material compatibility, service area, and availability.
+4. Competitive Bidding: Eligible recyclers receive the listing and can submit offers containing their proposed price, pickup availability, and other relevant conditions.
+5. Offer Comparison: Multiple offers are presented to the user. Gemma analyzes factors such as price, distance, pickup time, vendor rating, and material compatibility.
+6. AI Recommendation: Gemma provides an explainable recommendation and describes the trade-offs between the available offers.
+7. User Decision: The user makes the final selection and accepts a recycler's offer.
+8. Pickup and Transaction: The selected recycler receives the request, pickup is scheduled, and the transaction status is updated through the platform.
 
 ### Technical Decisions
 
-[Explain important architectural, algorithmic, or engineering decisions made during development.]
+1. Gemma as the Intelligence Layer
+Gemma is used for tasks requiring natural-language and multimodal understanding rather than deterministic operations.
+It assists with:
+- Understanding waste descriptions and images
+- Extracting structured information from unstructured inputs
+- Identifying suitable recycling categories
+- Understanding recycler capabilities
+- Comparing competing offers
+- Explaining recommendations
+Deterministic operations such as bidding, database updates, filtering, transaction states, and price calculations are handled by the backend.
+2. Two-Sided Marketplace Architecture
+The system separates the user and recycler workflows while connecting both through a common backend.
+This allows users to create waste listings while recyclers can independently discover relevant listings and submit offers.
+3. Competitive Offer Model
+Instead of automatically assigning a recycler, multiple eligible recyclers can submit offers.
+This gives users the ability to compare:
+- Price
+- Distance
+- Pickup availability
+- Rating
+- Recycler compatibility
+4. Explainable AI Recommendations
+Gemma does not make an irreversible transaction decision.
+Instead, it explains why an offer may be suitable and allows the user to make the final decision.
+For example:
+"Recycler B provides the highest price, while Recycler C offers faster pickup, shorter distance, and a higher vendor rating."
 
 ## Implementation During the Hackathon
 
-[Describe what the team built during the Hack Day and the major functionality or components completed during the event.]
+During the Hack Day, the team implemented a functional prototype of WasteConnect demonstrating the complete recycling marketplace workflow.
+The implemented prototype includes:
+- User waste listing
+- Waste image and description submission
+- Gemma-based waste understanding
+- Recycler profiles
+- Recycler discovery
+- Competitive bidding
+- Bid comparison
+- Gemma-powered offer analysis
+- Explainable recycler recommendation
+- Recycler selection
+- Pickup status
+- Transaction completion flow
+- User and recycler dashboards
 
 ### Team Contributions
 
-- **[Member Name]:** [Contribution]
-- **[Member Name]:** [Contribution]
-- **[Member Name]:** [Contribution]
-- **[Member Name]:** [Contribution]
+- **[AS Jeevanpranav]:** [Backend development, database design, API integration, and transaction workflow]
+- **[Dakshenya KS]:** [Frontend development, UI/UX, marketplace and dashboard implementation]
+- **[Mahizha S]:** [AI/ML architecture, Gemma integration, semantic matching, and decision intelligence ]
+- **[Prajiin K]:** [Recycler marketplace, bidding system, testing, integration, and deployment]
 
 ## Working Application
 
